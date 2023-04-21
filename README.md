@@ -1,4 +1,20 @@
+## Blogging Web-App using Flask and MongoDB
+
+Name: Aniket Acharya
+
+SRN: PES1UG20CS052
+
+Section: A
+
+## Team Members
+
+1. Abhay K Iyengar (SRN: PES1UG20CS004)
+2. Abhishek Singhi (SRN: PES1UG20CS011)
+3. Allamaprabhu (SRN: PES1UG20CS031)
+4. Aniket Acharya (SRN: PES1UG20CS052)
+
 ## Problem Statement
+
 Microservices are an architectural and organizational approach to software development where software is composed of small independent services that communicate over well-defined APIs. Microservices architectures make applications easier to scale and faster to develop, enabling innovation and accelerating time-to-market for new features.
 Docker and Kubernetes are almost synonymous to 'microservices' as they help package and manage the different components of a project/ application, thereby easing up the implementation of a microservices architecture.
 
@@ -74,38 +90,7 @@ Login to the mongo shell and -
 2. Insert a Collection
 3. Fill it with records
 
----
+Feel free to play around for brownie points!
 
-## Commands to run app
+## All Done! :)
 
-### Build the docker image of flask app
-```docker build -t <docker username>/<docker image name tag> -f dockerfile . ```
-
-### Push flask app image to dockerhub
-```docker push <docker username>/<docker image name tag>```
-
-### Applying the yaml files
-* ```kubectl apply -f configmap.yaml```
-* ```kubectl apply -f services.yaml```
-* ```kubectl apply -f deployments.yaml```
-* ```kubectl apply -f secret.yaml```
-
-### Check if pods are running
-```kubectl get all```
-
-### Staring the app
-```minikube tunnel```
-
-### To check pods
-```kubectl define <pod name>```
-
-### App can be accessed in 
-* flaskapp frontend : ```http://localhost:5001```
-* mongo-express : ```http://localhost:8081```
-
-
-### Debugging commands
-```kubectl describe <pod name>```
-* pod name can be acessed by ```kubectl get all``` command
-
-#### Part of Cloud Computing course @PES University
