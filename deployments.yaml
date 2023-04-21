@@ -1,4 +1,6 @@
----
+# note: YAML definitions for multiple components/resources can be bundled together into one YAML file
+# '---' is used to separate the definitions of the components/resources
+
 # define the `Deployment` for the mongodb server
 apiVersion: apps/v1
 kind: Deployment
